@@ -8,5 +8,11 @@ export function Text(props: TextProps) {
 }
 
 const styles = StyleSheet.create({
-  text: {color: 'white'},
+  text: {
+    color: 'white',
+    marginBottom: 12,
+    fontSize: 16,
+    letterSpacing: 1,
+    lineHeight: 20,
+  },
 });

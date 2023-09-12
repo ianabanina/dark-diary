@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import {COLORS} from '../../app/styles/Base.styles';
 
 interface IComponentProps extends React.PropsWithChildren {
@@ -11,7 +11,7 @@ export function Layout(props: IComponentProps) {
 
   return (
     <SafeAreaView style={styles.wrapper}>
-      <View style={styles.content}>{children}</View>
+      <ScrollView style={styles.content}>{children}</ScrollView>
 
       {footer && <View style={styles.footer}>{footer}</View>}
     </SafeAreaView>
